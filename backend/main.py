@@ -38,14 +38,23 @@ def add_transakcija():
     except ValueError:
         return jsonify({"error": "Datum nije u ISO formatu, npr. 2025-08-19T12:00:00"}), 400
 
+    try:
+        iznos = float(data['iznos'])
+    except (TypeError, ValueError):
+        return jsonify({"error": "iznos mora biti broj"}), 400
+
+    if iznos < 0:
+        return jsonify({"error": "Iznos ne smije biti negativan"}), 400
+
     nova = Transakcija(
         vrsta=data['vrsta'],
-        iznos=data['iznos'],
+        iznos=iznos,
         opis=data['opis'],
         datum=datum_obj
     )
     commit()
     return jsonify({"id": nova.id})
+
 
 @app.route('/transakcije', methods=['GET'])
 @db_session
@@ -114,6 +123,10 @@ def update_transakcija(transakcija_id):
             transakcija.iznos = float(data["iznos"])
         except (TypeError, ValueError):
             return jsonify({"error": "iznos mora biti broj"}), 400
+
+    if transakcija.iznos < 0:
+        return jsonify({"error": "Iznos ne smije biti negativan"}), 400
+
 
     if "opis" in data:
         transakcija.opis = data["opis"]
