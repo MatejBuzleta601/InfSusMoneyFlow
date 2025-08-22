@@ -1,0 +1,90 @@
+/* Pozadina cijelog tijela */
+body {
+    background-color: #007BFF; /* lijepa plava */
+    color: #ffffff; /* bijeli tekst za kontrast */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    text-align: center;
+    background: linear-gradient(90deg, #66d9ff, #33aaff); /* svjetliji gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2rem;
+}
+
+/* Kartice za unos, tablicu i graf */
+.card {
+    background-color: rgba(255, 255, 255, 0.9); /* bijela kartica s malo prozirnosti */
+    color: #000; /* tekst u kartici crn */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Naslovi unutar kartica */
+.card-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.btn {
+    transition: all 0.3s ease;
+}
+
+.card {
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+
+/* Gumbi */
+.btn-primary {
+    background-color: #0056b3;
+    border-color: #004080;
+}
+
+.btn-primary:hover {
+    background-color: #004080;
+    border-color: #003366;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #5a6268;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #4e555b;
+}
+
+/* Tablica */
+table th, table td {
+    vertical-align: middle;
+}
+
+table tbody tr:hover {
+    background-color: rgba(0,123,255,0.1);
+}
+
+
+/* Forma */
+#transakcija-form input, #transakcija-form select {
+    margin-bottom: 0.75rem;
+}
+
+/* Graf */
+#transakcijeChart {
+    max-height: 300px;
+}
