@@ -9,4 +9,9 @@ Cilj projekta je olakšati korisnicima evidenciju prihoda i troškova te pružit
 - Prikaz svih transakcija u tablici
 - Grafički prikaz ukupnih prihoda i troškova
 
+## Use Case
+
+![Use Case](Use Case MoneyFlow.png)
+
+
 ## Kako pokrenuti aplikaciju
