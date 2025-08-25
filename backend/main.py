@@ -4,7 +4,7 @@ from pony.orm import Database, Required, db_session, commit
 from datetime import datetime
 from flask_cors import CORS
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='frontend')
 CORS(app)
 
 db = Database()
@@ -22,7 +22,11 @@ db.generate_mapping(create_tables=True)
 
 @app.route('/')
 def home():
-    return send_from_directory('frontend', 'index.html')
+    return send_from_directory(app.static_folder, 'index.html')
+
+@app.route('/<path:path>')
+def serve_static(path):
+    return send_from_directory(app.static_folder, path)
 
 @app.route('/transakcije', methods=['POST'])
 @db_session
