@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask import send_from_directory
 from pony.orm import Database, Required, db_session, commit
 from datetime import datetime
 from flask_cors import CORS
@@ -21,7 +22,7 @@ db.generate_mapping(create_tables=True)
 
 @app.route('/')
 def home():
-    return "MoneyFlow backend radi!"
+    return send_from_directory('frontend', 'index.html')
 
 @app.route('/transakcije', methods=['POST'])
 @db_session
