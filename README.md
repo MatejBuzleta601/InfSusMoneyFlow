@@ -3,7 +3,7 @@ MoneyFlow je web servis koji omogućuje praćenje i bilježenje osobnih financij
 
 ## Opis
 Cilj projekta je olakšati korisnicima evidenciju prihoda i troškova te pružiti pregled kroz tablice i grafove.
-Backend je izrađen u Flasku a Frontend u HTML + CSS koristeći Bootstrap linkove za CSS.
+Backend je izrađen u Flasku i pomoću Postmana sam ga testirao prije nego sam krenuo sa frontendom. Frontend sam radio u HTML + CSS koristeći Bootstrap linkove za CSS.
 Docker se koristi za pokretanje aplikacije na lokalno računalo.
 
 ## Funkcionalnosti
@@ -30,8 +30,8 @@ Docker se koristi za pokretanje aplikacije na lokalno računalo.
 Ovo je link za aplikaciju: http://localhost:5000
 
 ## Tehnologije
-- Backend: Python, Flask, PonyORM, SQLite
-- Frontend: HTML, CSS, Bootstrap
+- Backend: Postman (za testiranje API), Python, Flask, PonyORM, SQLite
+- Frontend: HTML, CSS, JS, Bootstrap
 - Docker: Dockerfile, Docker Compose
 
 ## Autor
