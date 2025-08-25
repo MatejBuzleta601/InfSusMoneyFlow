@@ -11,7 +11,7 @@ Cilj projekta je olakšati korisnicima evidenciju prihoda i troškova te pružit
 
 ## Use Case
 
-![Use Case](https://github.com/MatejBuzleta601/InfSusMoneyFlow/Use case MoneyFlow.png)
+![Use Case](Use%20case%20MoneyFlow.png)
 
 
 ## Kako pokrenuti aplikaciju
