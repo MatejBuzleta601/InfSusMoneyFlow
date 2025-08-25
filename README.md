@@ -24,7 +24,7 @@ Docker se koristi za pokretanje aplikacije na lokalno računalo.
 2. Klonirajte repozitorij:
 ```git clone https://github.com/MatejBuzleta601/InfSusMoneyFlow```
 ```cd InfSusMoneyFlow```
-3. Pokrenite Docker Compose:
+3. Pokrenite Docker Compose (Docker treba biti otvoren u pozadini):
 ```docker-compose up --build```
 4. Otvorite preglednik:
 Ovo je link za aplikaciju: http://localhost:5000
