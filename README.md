@@ -11,7 +11,7 @@ Cilj projekta je olakšati korisnicima evidenciju prihoda i troškova te pružit
 
 ## Use Case
 
-![Use Case](Use Case MoneyFlow.png)
+![Use Case](Use case MoneyFlow.png)
 
 
 ## Kako pokrenuti aplikaciju
